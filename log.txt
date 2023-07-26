@@ -1,0 +1,337 @@
+ ================================ 
+
+Running with overlap = True ... 
+
+Testing with 2 functional groups ... 
+
+
+The 2 most common functional groups are: 
+
+1'th most common functional group:
+Arene: 1016
+
+2'th most common functional group:
+Alkane: 911
+
+Training Model ...
+
+Testing Model ... 
+
+Accuracy of the model is: 0.45110410094637227
+
+Saving Confusion Matrix ... 
+
+Testing with 3 functional groups ... 
+
+
+The 3 most common functional groups are: 
+
+1'th most common functional group:
+Arene: 1016
+
+2'th most common functional group:
+Alkane: 911
+
+3'th most common functional group:
+Amine: 361
+
+Training Model ...
+
+Testing Model ... 
+
+Accuracy of the model is: 0.45110410094637227
+
+Saving Confusion Matrix ... 
+
+Testing with 4 functional groups ... 
+
+
+The 4 most common functional groups are: 
+
+1'th most common functional group:
+Arene: 1016
+
+2'th most common functional group:
+Alkane: 911
+
+3'th most common functional group:
+Amine: 361
+
+4'th most common functional group:
+Alcohol: 234
+
+Training Model ...
+
+Testing Model ... 
+
+Accuracy of the model is: 0.45741324921135645
+
+Saving Confusion Matrix ... 
+
+Testing with 5 functional groups ... 
+
+
+The 5 most common functional groups are: 
+
+1'th most common functional group:
+Arene: 1016
+
+2'th most common functional group:
+Alkane: 911
+
+3'th most common functional group:
+Amine: 361
+
+4'th most common functional group:
+Alcohol: 234
+
+5'th most common functional group:
+Haloalkane: 230
+
+Training Model ...
+
+Testing Model ... 
+
+Accuracy of the model is: 0.5173501577287066
+
+Saving Confusion Matrix ... 
+
+Testing with 6 functional groups ... 
+
+
+The 6 most common functional groups are: 
+
+1'th most common functional group:
+Arene: 1016
+
+2'th most common functional group:
+Alkane: 911
+
+3'th most common functional group:
+Amine: 361
+
+4'th most common functional group:
+Alcohol: 234
+
+5'th most common functional group:
+Haloalkane: 230
+
+6'th most common functional group:
+Alkene: 213
+
+Training Model ...
+
+Testing Model ... 
+
+Accuracy of the model is: 0.5425867507886435
+
+Saving Confusion Matrix ... 
+
+Testing with 7 functional groups ... 
+
+
+The 7 most common functional groups are: 
+
+1'th most common functional group:
+Arene: 1016
+
+2'th most common functional group:
+Alkane: 911
+
+3'th most common functional group:
+Amine: 361
+
+4'th most common functional group:
+Alcohol: 234
+
+5'th most common functional group:
+Haloalkane: 230
+
+6'th most common functional group:
+Alkene: 213
+
+7'th most common functional group:
+Ketone: 184
+
+Training Model ...
+
+Testing Model ... 
+
+Accuracy of the model is: 0.580441640378549
+
+Saving Confusion Matrix ... 
+
+Saving Line Plot ... 
+
+ ================================ 
+
+Running with overlap = False ... 
+
+Testing with 2 functional groups ... 
+
+
+The 2 most common functional groups are: 
+
+1'th most common functional group:
+Arene: 1016
+
+2'th most common functional group:
+Alkane: 911
+
+Removed 506 complex compounds
+Training Model ...
+
+Testing Model ... 
+
+Accuracy of the model is: 0.6203703703703703
+
+Saving Confusion Matrix ... 
+
+Testing with 3 functional groups ... 
+
+
+The 3 most common functional groups are: 
+
+1'th most common functional group:
+Arene: 1016
+
+2'th most common functional group:
+Alkane: 911
+
+3'th most common functional group:
+Amine: 361
+
+Removed 727 complex compounds
+Training Model ...
+
+Testing Model ... 
+
+Accuracy of the model is: 0.5232558139534884
+
+Saving Confusion Matrix ... 
+
+Testing with 4 functional groups ... 
+
+
+The 4 most common functional groups are: 
+
+1'th most common functional group:
+Arene: 1016
+
+2'th most common functional group:
+Alkane: 911
+
+3'th most common functional group:
+Amine: 361
+
+4'th most common functional group:
+Alcohol: 234
+
+Removed 832 complex compounds
+Training Model ...
+
+Testing Model ... 
+
+Accuracy of the model is: 0.5960264900662252
+
+Saving Confusion Matrix ... 
+
+Testing with 5 functional groups ... 
+
+
+The 5 most common functional groups are: 
+
+1'th most common functional group:
+Arene: 1016
+
+2'th most common functional group:
+Alkane: 911
+
+3'th most common functional group:
+Amine: 361
+
+4'th most common functional group:
+Alcohol: 234
+
+5'th most common functional group:
+Haloalkane: 230
+
+Removed 921 complex compounds
+Training Model ...
+
+Testing Model ... 
+
+Accuracy of the model is: 0.42105263157894735
+
+Saving Confusion Matrix ... 
+
+Testing with 6 functional groups ... 
+
+
+The 6 most common functional groups are: 
+
+1'th most common functional group:
+Arene: 1016
+
+2'th most common functional group:
+Alkane: 911
+
+3'th most common functional group:
+Amine: 361
+
+4'th most common functional group:
+Alcohol: 234
+
+5'th most common functional group:
+Haloalkane: 230
+
+6'th most common functional group:
+Alkene: 213
+
+Removed 1053 complex compounds
+Training Model ...
+
+Testing Model ... 
+
+Accuracy of the model is: 0.44339622641509435
+
+Saving Confusion Matrix ... 
+
+Testing with 7 functional groups ... 
+
+
+The 7 most common functional groups are: 
+
+1'th most common functional group:
+Arene: 1016
+
+2'th most common functional group:
+Alkane: 911
+
+3'th most common functional group:
+Amine: 361
+
+4'th most common functional group:
+Alcohol: 234
+
+5'th most common functional group:
+Haloalkane: 230
+
+6'th most common functional group:
+Alkene: 213
+
+7'th most common functional group:
+Ketone: 184
+
+Removed 1107 complex compounds
+Training Model ...
+
+Testing Model ... 
+
+Accuracy of the model is: 0.375
+
+Saving Confusion Matrix ... 
+
+Saving Line Plot ... 
+
+Done!
