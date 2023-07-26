@@ -9,7 +9,7 @@ from utils import make_confusion_matrix, make_lineplot
 import sys
 
 MAX_GROUP_TEST = 7
-accuracies = []
+
 
 f = open('./Decision Tree/log.txt', 'w+')
 sys.stdout = f
@@ -18,6 +18,7 @@ for o in [True, False]:
     print(" ================================ \n")
     print(f'Running with overlap = {o} ... \n')
     OVERLAP = o
+    accuracies = []
     for i in range(2, MAX_GROUP_TEST + 1):
         
         print(f'Testing with {i} functional groups ... \n')
