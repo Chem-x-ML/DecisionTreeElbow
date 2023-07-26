@@ -55,8 +55,9 @@ def get_common_fgroups_df(n):
 if __name__ == '__main__':
     ''' code that prints the frequency of fgroups in the dataset '''
     # find_most_common_groups(5)
-    new_df = get_common_fgroups_df(5)
+    new_df = get_common_fgroups_df(10)
     print(new_df)
+    classes = pd.get_dummies(new_df['fg_label']).columns
     
         
 

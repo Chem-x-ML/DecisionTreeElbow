@@ -5,8 +5,7 @@ import ast
 
 
 
-def get_split_data(overlap=True):
-    n_fgroups = 5
+def get_split_data(n_fgroups, overlap=True ):
 
     data_df = get_common_fgroups_df(n_fgroups)
     

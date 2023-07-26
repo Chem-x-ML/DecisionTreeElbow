@@ -5,31 +5,36 @@ from sklearn.metrics import accuracy_score
 from dataset import get_split_data
 import seaborn as sns
 from sklearn.preprocessing import LabelBinarizer
-from utils import make_confusion_matrix
+from utils import make_confusion_matrix, make_lineplot
 
+OVERLAP = False
+MAX_GROUP_TEST = 7
+accuracies = []
 
-X_train, X_test, y_train, y_test, classes = get_split_data(overlap=False)
+for i in range(2, MAX_GROUP_TEST + 1):
+    
+    print(f'Testing with {i} functional groups ... \n')
+          
+    X_train, X_test, y_train, y_test, classes = get_split_data(overlap=OVERLAP, n_fgroups=i)
 
-clf = DecisionTreeClassifier()
+    clf = DecisionTreeClassifier()
 
-print("Training Model ...\n")
-clf.fit(X_train, y_train)
+    print("Training Model ...\n")
+    clf.fit(X_train, y_train)
 
-print("Testing Model ... \n")
-y_pred = clf.predict(X_test)
-accuracy = accuracy_score(y_test, y_pred)
+    print("Testing Model ... \n")
+    y_pred = clf.predict(X_test)
+    accuracy = accuracy_score(y_test, y_pred)
+    accuracies.append(accuracy)
+    
+    print(f'Accuracy of the model is: {accuracy}\n')
 
-print(f'Accuracy of the model is: {accuracy}\n')
+    # convert one hot tensors to 1d labels
+    y_pred = np.argmax(y_pred, axis=1)
+    y_test = np.argmax(y_test, axis=1)
 
-# TODO confusion matrix, experiment with overlap vs no overlap, iterate with different number of functional groups
+    make_confusion_matrix(y_test, y_pred, classes, accuracy=accuracy, overlap=OVERLAP, n_fgroups=i)
 
-# convert one hot tensors to 1d labels
-y_pred = np.argmax(y_pred, axis=1)
-y_test = np.argmax(y_test, axis=1)
+make_lineplot(accs=accuracies,overlap=OVERLAP)
 
-make_confusion_matrix(y_test, y_pred, classes, accuracy)
-
-
-# fig = sns.heatmap(cm)
-# fig.savefig('confusion_matrix.png')
-# print(cm.shape)
+print("Done!")
